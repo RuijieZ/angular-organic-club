@@ -8,10 +8,10 @@
 		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 		<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
 	</head>
-	<body ng-controller="AppCtrl">
+	<body ng-controller="AppCtrl" >
 		<base href='/'>
 		<!--header start here-->
-		<div class="header">
+		<div class="header" ng-show="indexContent.display">
 			<div class="container">
 				<div class="header-main">
 					    <div class="head-left">
@@ -36,7 +36,7 @@
 		   </div>
 		</div>
 
-		<div class="top-navg-main">
+		<div class="top-navg-main" ng-show="indexContent.display">
 			<div class="container">
 			    <div class="top-navg">
 		    	    <span class="menu"> <img src="images/icon.png" alt=""/></span>
@@ -49,7 +49,7 @@
 			</div>
 		</div>
 		<div ng-view></div>
-		<div class="footer">
+		<div class="footer" ng-show="indexContent.display">
 			<div class="container">
 				<div class="footer-main">
 					  <div class="col-md-4 ftr-grd">

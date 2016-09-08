@@ -34,6 +34,10 @@ config(function ($routeProvider, $locationProvider) {
     when('/register', {
       templateUrl: 'views/register.html',
       controller: 'AppCtrl'
+    }).
+    when('/app', {
+      templateUrl: 'views/app.html',
+      controller: 'app'
     });
 
   $locationProvider.html5Mode(true);
